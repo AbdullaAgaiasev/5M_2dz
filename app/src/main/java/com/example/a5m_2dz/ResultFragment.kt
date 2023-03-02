@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.example.a5m_2dz.databinding.FragmentResultBinding
+import com.example.a5m_2dz.remote.LoveModel
 
 class ResultFragment : Fragment() {
 

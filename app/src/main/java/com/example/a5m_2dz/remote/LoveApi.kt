@@ -1,10 +1,9 @@
-package com.example.a5m_2dz
+package com.example.a5m_2dz.remote
 
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Header
 import retrofit2.http.Query
-import java.nio.channels.spi.AbstractSelectionKey
 
 interface LoveApi {
 

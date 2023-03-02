@@ -1,4 +1,4 @@
-package com.example.a5m_2dz
+package com.example.a5m_2dz.remote
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
