@@ -21,4 +21,9 @@
         android:name="com.example.a5m_2dz.ResultFragment"
         android:label="ResultFragment"
         tools:layout="@layout/fragment_result"/>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.example.a5m_2dz.onboarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" />
 </navigation>

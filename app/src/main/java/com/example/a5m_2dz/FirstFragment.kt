@@ -6,17 +6,13 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.os.bundleOf
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.navigation.fragment.findNavController
 import com.example.a5m_2dz.databinding.FragmentFirstBinding
-import com.example.a5m_2dz.remote.LoveModel
-import com.example.a5m_2dz.remote.LoveService
 import com.example.a5m_2dz.viewmodel.LoveViewModel
-import retrofit2.Call
-import retrofit2.Response
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class FirstFragment : Fragment() {
 
     private lateinit var binding: FragmentFirstBinding
