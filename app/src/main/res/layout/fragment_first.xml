@@ -80,4 +80,19 @@
         android:textSize="18sp"
         android:textAllCaps="false"/>
 
+    <com.google.android.material.button.MaterialButton
+        android:textColor="?android:actionBarWidgetTheme"
+        app:cornerRadius="30dp"
+        android:id="@+id/btn_history"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="-10dp"
+        android:backgroundTint="@color/red"
+        android:text="history"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textAllCaps="false"/>
+
 </LinearLayout>

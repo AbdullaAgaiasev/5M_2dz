@@ -1,8 +1,9 @@
-package com.example.a5m_2dz.onboarding.adapter
+package com.example.a5m_2dz.onBoarding.adapter
+
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Adapter
+import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.RecyclerView
 import com.example.a5m_2dz.R
@@ -30,7 +31,7 @@ class OnBoardingAdapter(private val onClick: () -> Unit) :
             OnBoarding(R.drawable.fourth, "It's Funs and Many more", " ")
         )
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OnBoardingViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OnBoardingViewHolder{
         return OnBoardingViewHolder(
             ItemOnBoardingBinding.inflate(
                 LayoutInflater.from(parent.context),
@@ -62,5 +63,4 @@ class OnBoardingAdapter(private val onClick: () -> Unit) :
         }
 
     }
-
 }

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/firstFragment">
+    app:startDestination="@id/onBoardingFragment">
 
     <activity
         android:id="@+id/mainActivity"
@@ -23,7 +23,12 @@
         tools:layout="@layout/fragment_result"/>
     <fragment
         android:id="@+id/onBoardingFragment"
-        android:name="com.example.a5m_2dz.onboarding.OnBoardingFragment"
+        android:name="com.example.a5m_2dz.onBoarding.OnBoardingFragment"
         android:label="fragment_on_boarding"
         tools:layout="@layout/fragment_on_boarding" />
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.example.a5m_2dz.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
 </navigation>
