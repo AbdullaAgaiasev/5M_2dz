@@ -45,6 +45,7 @@ class FirstFragment : Fragment() {
                 findNavController().navigate(R.id.historyFragment)
 
             }
+
             btnCalculate.setOnClickListener {
                 viewModel.getLiveLove( firstEt.text.toString(), secondEt.text.toString())
                     .observe(viewLifecycleOwner,

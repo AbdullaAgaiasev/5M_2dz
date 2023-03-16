@@ -12,23 +12,23 @@ import com.example.a5m_2dz.onboard.OnBoarding
 
 class OnBoardingAdapter(private val onClick: () -> Unit) :
     Adapter<OnBoardingAdapter.OnBoardingViewHolder>() {
+    private val image = arrayListOf(R.raw.man,R.raw.update,R.raw.goodbye,R.raw.android)
         private val data = arrayListOf(
             OnBoarding(
-                R.drawable.first,
                 "Have a good time!",
                 "You should take the time to help those \n who who need you"
             ),
             OnBoarding(
-                R.drawable.second,
                 "Cherishing love",
                 "It is now no longer possible for\nyou to cherish love"
             ),
             OnBoarding(
-                R.drawable.third,
                 "Have a breakup?",
                 "We have made the correction for you\n don't worry\n Maybe someone is waiting for you!"
             ),
-            OnBoarding(R.drawable.fourth, "It's Funs and Many more", " ")
+            OnBoarding(
+                "It's Funs and Many more",
+                " ")
         )
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): OnBoardingViewHolder{
@@ -52,9 +52,10 @@ class OnBoardingAdapter(private val onClick: () -> Unit) :
 
         fun bind(onBoarding: OnBoarding) {
             binding.apply {
-                onBoarding.image?.let { image.setImageResource(it) }
+//                onBoarding.image?.let { lottieMain.setImageResource(it) }
                 title.text = onBoarding.title
                 desc.text = onBoarding.desc
+                binding.lottieMain.setAnimation(image[position])
                 binding.btnGetStart.isVisible = adapterPosition == data.lastIndex
                 binding.btnGetStart.setOnClickListener {
                     onClick()
